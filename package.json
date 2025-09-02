@@ -1,0 +1,14 @@
+{
+  "name": "poetry-marble-grey",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.4"
+  },
+  "scripts": {
+    "start": "npx serve -s build",
+    "build": "npx react-scripts build"
+  }
+}
