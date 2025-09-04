@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  background: #f7f7f7;
+  font-family: "Lora", serif;
+  color: #1a1a1a;
+}
+header {
+  background: #7a2234;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
+h1, h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-variant: small-caps;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2em;
+}
+.subtitle {
+  font-size: 1.1rem;
+  letter-spacing: 0.7px;
+  margin-top: 0;
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto 0 auto;
+  padding: 0 1rem;
+}
+section {
+  margin-bottom: 2.5rem;
+}
+#highlight {
+  background: #fff4f6;
+  border-left: 6px solid #7a2234;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(122,34,52,0.08);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+#highlight h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3em;
+}
+#poemOfWeek {
+  margin-bottom: 0.2em;
+}
+.poem-title {
+  font-family: "Cinzel Decorative", serif;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-size: 1.2rem;
+  color: #7a2234;
+  margin: 0 0 0.1em 0;
+}
+.poem-author {
+  font-size: 1em;
+  font-style: italic;
+  color: #444;
+}
+.poem-content {
+  font-family: "Lora", serif;
+  background: none;
+  font-size: 1.07em;
+  margin: 0.7em 0 0.4em 0;
+  white-space: pre-wrap;
+}
+#add-poem form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px 0 rgba(122,34,52,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  max-width: 400px;
+}
+#add-poem label {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1em;
+  color: #7a2234;
+  text-transform: lowercase;
+  margin-bottom: 0.2em;
+  display: flex;
+  flex-direction: column;
+}
+#add-poem input, #add-poem textarea {
+  margin-top: 0.2em;
+  padding: 0.6em;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: "Lora", serif;
+}
+#add-poem button {
+  background: #7a2234;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7em 1.2em;
+  font-family: "Cinzel Decorative", serif;
+  text-transform: lowercase;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+.poem-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  padding: 1.1rem 1.3rem 1rem 1.3rem;
+  margin-bottom: 1.5rem;
+}
+.comments-section {
+  margin-top: 1em;
+  background: #f7f3f5;
+  border-radius: 5px;
+  padding: 0.7em 1em;
+}
+.comment {
+  font-size: 0.95em;
+  margin-bottom: 0.3em;
+}
+.comment span {
+  font-weight: bold;
+  color: #7a2234;
+  margin-right: 0.4em;
+}
+.comment-form {
+  margin-top: 0.7em;
+  display: flex;
+  gap: 0.5em;
+}
+.comment-form input {
+  flex: 1;
+  padding: 0.5em;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+.comment-form button {
+  background: #7a2234;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 1.1em;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1em;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+#chat-box {
+  max-width: 350px;
+  margin: 2rem auto 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(122,34,52,0.07);
+  padding: 1rem 1rem 0.8rem 1rem;
+  min-height: 260px;
+}
+#chat-box h2 {
+  font-size: 1.1em;
+  color: #7a2234;
+  margin-top: 0;
+}
+#chatMessages {
+  max-height: 130px;
+  overflow-y: auto;
+  margin-bottom: 0.6em;
+  font-size: 1em;
+}
+.chat-message {
+  margin-bottom: 0.6em;
+}
+.chat-message span {
+  font-weight: bold;
+  color: #7a2234;
+  margin-right: 0.5em;
+}
+#chatForm {
+  display: flex;
+  gap: 0.5em;
+}
+#chatInput {
+  flex: 1;
+  padding: 0.5em;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+#chatForm button {
+  background: #7a2234;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 1.1em;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1em;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+footer {
+  margin-top: 2rem;
+  background: #edecec;
+  padding: 1.3em 0 1em 0;
+  text-align: center;
+  font-size: 1em;
+  color: #7a2234;
+  font-family: "Lora", serif;
+  border-top: 1px solid #e7e7e7;
+}
+footer a {
+  color: #7a2234;
+  text-decoration: underline dotted;
+}
+.copyright {
+  font-size: 0.92em;
+  color: #888;
+}
+@media (max-width: 700px) {
+  main, #chat-box {
+    max-width: 98vw;
+    margin: 1rem auto;
+  }
+}
