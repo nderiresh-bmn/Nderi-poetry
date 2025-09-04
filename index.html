@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Marble Grey Poetry</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora&display=swap" rel="stylesheet">
-    <style>
-      body {
-        margin: 0;
-        background: #f7f7f7;
-        font-family: 'Lora', serif;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Marble Grey Poetry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>marble grey poetry</h1>
+    <p class="subtitle">share your words in the calm echo of marble and crimson</p>
+  </header>
+  <main>
+    <section id="highlight">
+      <h2>poem of the week</h2>
+      <div id="poemOfWeek"></div>
+    </section>
+
+    <section id="add-poem">
+      <h2>add a poem</h2>
+      <form id="poemForm">
+        <label>title <input type="text" id="poemTitle" required maxlength="60"></label>
+        <label>author <input type="text" id="poemAuthor" required maxlength="30"></label>
+        <label>poem <textarea id="poemContent" required maxlength="1000"></textarea></label>
+        <button type="submit">add poem</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>all poems</h2>
+      <div id="poemList"></div>
+    </section>
+  </main>
+
+  <aside id="chat-box">
+    <h2>chat with poets</h2>
+    <div id="chatMessages"></div>
+    <form id="chatForm">
+      <input type="text" id="chatInput" placeholder="write a message..." maxlength="120" required>
+      <button type="submit">send</button>
+    </form>
+  </aside>
+
+  <footer>
+    contact: <a href="mailto:ireribrian015@gmail.com">ireribrian015@gmail.com</a> |
+    phone: <a href="tel:0791012180">0791012180</a>
+    <br>
+    <span class="copyright">© <span id="year"></span> marble grey poetry</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
